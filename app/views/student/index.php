@@ -15,27 +15,43 @@
 <div class="card">
   <div class="card-body">
     <form action="" method="POST">
-        <br><h3 class="text-center">Update een student uit het systeem!</h3><br>
+        <br><h3 class="text-center">Update een student uit het systeem</h3><br>
         <input class="form-control mb-3" type="text" name="studentid" placeholder="ID Student">
         <input class="form-control mb-3" type="text" name="firstname" placeholder="Voornaam">
         <input class="form-control mb-3" type="text" name="lastname" placeholder="Achternaam">
         <input class="form-control mb-3" type="text" name="mail" placeholder="Mail">
         <input class="form-control mb-3" type="text" name="phonenumber" placeholder="Telefoon nummer">
         <input class="form-control mb-3" type="text" name="class" placeholder="Klas">
-        <button class="btn btn-primary" type="submit" name="submitupdate">Confirm</button>
+        <button class="btn btn-primary" type="submit" name="submitupdate">Bijwerken</button>
     </form>
   </div>
 </div>
 <br>
+
+<!-- create submit form with data for creating a new student -->
+<div class="card">
+  <div class="card-body">
+    <form action="" method="POST">
+        <br><h3 class="text-center">Nieuwe student toevoegen</h3><br>
+        <input class="form-control mb-3" type="text" name="studentid" placeholder="ID Student">
+        <input class="form-control mb-3" type="text" name="firstname" placeholder="Voornaam">
+        <input class="form-control mb-3" type="text" name="lastname" placeholder="Achternaam">
+        <input class="form-control mb-3" type="text" name="mail" placeholder="Mail">
+        <input class="form-control mb-3" type="text" name="phonenumber" placeholder="Telefoon nummer">
+        <input class="form-control mb-3" type="text" name="class" placeholder="Klas">
+        <button class="btn btn-primary" type="submit" name="submitcreate">Toevoegen</button>
+    </form>
+  </div>
+</div>
 
 
 <!-- Delete student -->
 <div class="card">
   <div class="card-body">
     <form action="" method="POST">
-        <br><h3 class="text-center">Verwijder een student uit het systeem!.</h3><br>
+        <br><h3 class="text-center">Verwijder een student uit het systeem</h3><br>
         <input class="form-control mb-3" type="text" name="studentid" placeholder="ID Student">
-        <button class="btn btn-primary mb-3" type="submit" name="submitdelete">Confirm</button>
+        <button class="btn btn-primary mb-3" type="submit" name="submitdelete">Verwijderen</button>
     </form>
   </div>
 </div>
