@@ -31,7 +31,17 @@ class Items extends Controller {
         ];
 
         $this->view("items/index", $data);
+
+           //Form submit button to delete student entry
+           if(isset($_POST["delete"])){
+
+            //Call function in Model class and give no arguments
+            $this->item->delete();
+          
+          }
+          
     }
+    
 
 
 

@@ -1,5 +1,6 @@
 <?php
-class item{
+
+class Item{
 
    private $db;
 
@@ -12,6 +13,17 @@ class item{
    {
       $this->db->query("SELECT * FROM items");
       $result = $this->db->resultSet();
+
+      return $result;
+   }
+   public function delete() {
+      
+      $itemid = $_POST["itemid"];
+
+      $query = $this->db->query("DELETE FROM items WHERE itemid='$itemid'");
+
+      header("location: ../items/index");
+      $result = $this->db->resultset();
 
       return $result;
    }

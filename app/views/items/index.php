@@ -13,6 +13,13 @@
       <th>Delete</th>
     </tr>
   </thead>
+
+  <form action="" method="POST">
+    <br><h3>Verwijder een student uit het systeem!</h3><br> 
+    <input class="form-control" type="text" name="itemid" placeholder="voer item id in">
+    <button class="btn btn-primary" type="submit" name="delete">Confirm</button>
+</form>
+
   <tbody>   
         <?= $data["itemData"]; ?>
   </tbody>
