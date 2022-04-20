@@ -45,7 +45,7 @@
 </form>
 
 
-<h2>items</h2>
+<h2>Toegevoegde items</h2>
 <?= $data["scanner"] ?>
 
 <?php
