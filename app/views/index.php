@@ -39,15 +39,23 @@
     <div class="col-sm-12 col-md-3">
       <div class="card">
         <div class="card-body">
-          <h5 class="text-center">Snelmenu</h5>
+          <h5 class="text-center">Het is vandaag</h5>
+          <p class="text-center"><?= date("d/m/Y") ?></p>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="text-center">De tijd momenteel:</h5>
+          <p class="text-center"><?= date("h:i") ?></p>
         </div>
       </div>
     </div>
     <div class="col-sm-12 col-md-6">
       <div class="card">
         <div class="card-body">
-          <h5 class="text-center">Snelmenu</h5>
-
+          <h5 class="text-center">Welkom.</h5>
+            <p class="text-center">Ook deze website heet je van harte welkom!</p>
 
         </div>
       </div>
