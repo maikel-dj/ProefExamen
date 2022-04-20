@@ -1,6 +1,3 @@
-<h1><a href="http://proefexamen.nl/countries/index">Landenoverzicht</a></h1>
-<h1><a href="http://proefexamen.nl/student/index">Beheer studenten</a></h1>
-<h1><a href="http://proefexamen.nl/createitem/index">Item aanmaken</a></h1>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style media="screen">
 
@@ -27,6 +24,8 @@
 }
 </style>
 
+<?php date_default_timezone_set('Europe/Amsterdam'); ?>
+
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12 col-md-3">
@@ -37,6 +36,7 @@
           <div id="snelmenubg"><a href="../" id="snelmenu" style="text-decoration: none;"><i class="fas fa-text-width"></i> Beheer baliemedewerkers</a></div>
           <div id="snelmenubg"><a href="../" id="snelmenu" style="text-decoration: none;"><i class="fas fa-ticket-alt"></i> Beheer docenten</a></div>
           <div id="snelmenubg"><a href="../" id="snelmenu" style="text-decoration: none;"><i class="fas fa-file-invoice"></i> Maak item</a></div>
+          <div id="snelmenubg"><a href="../" id="snelmenu" style="text-decoration: none;"><i class="fas fa-file-invoice"></i> Reserveer item</a></div>
         </div>
       </div>
     </div>
@@ -60,9 +60,10 @@
         <div class="card-body">
           <h5 class="text-center">Welkom.</h5>
             <p class="text-center">Ook deze website heet je van harte welkom!</p>
-
         </div>
       </div>
     </div>
+
+
   </div>
 </div>
