@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style media="screen">
 #wrapper {
     overflow-x: hidden;
@@ -165,7 +166,7 @@ document.querySelectorAll('.sidebar .nav-link').forEach(function(element){
     		<a class="nav-link nav-edit menuitem"><i class="fas fa-briefcase"></i> Gebruikersbeheer</a>
     		<ul class="submenu collapse">
     			<li><a class="nav-link nav-edit-item" href="../student">Studenten</a></li>
-    			<li><a class="nav-link nav-edit-item" href="../">Docenten</a></li>
+    			<li><a class="nav-link nav-edit-item" href="../teacher">Docenten</a></li>
     			<li><a class="nav-link nav-edit-item" href="../">Baliemedewerkers</a></li>
     		</ul>
     	</li>
@@ -173,7 +174,12 @@ document.querySelectorAll('.sidebar .nav-link').forEach(function(element){
       </div>
       <div class="row spacingitem" style="margin-left: 1vw;" >
         <div class="col">
-        <a href="?logout" class="menuitem" style="color: red !important;" ><i class="fas fa-arrow-right-to-bracket"></i> Uitloggen</a>
+        <a href="../createitem/index" class="menuitem" ><i class="fas fa-shopping-cart"></i> Item aanmaken</a>
+        </div>
+      </div>
+      <div class="row spacingitem" style="margin-left: 1vw;" >
+        <div class="col">
+        <a href="../reserveren/index" class="menuitem" ><i class="fas fa-list"></i> Resevering doen</a>
         </div>
       </div>
     </div>
