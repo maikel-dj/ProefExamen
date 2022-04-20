@@ -1,14 +1,57 @@
   <title><?= $data["title"]?></title>
-<h1>Scan je tag</h1>
 
-<form action="post">
-    <label for="scanName">Scan your tag</label>
-    <input type="text" autofocus id="scanName" name="scanName"><br><br>
-</form>
+<!-- Show list of users with self made table -->
 
-<h2>id  Land    hoofdstad   continent   aantalinwoners</h2>
-<?= $data["scanner"] ?>
+<div class="card">
+  <div class="card-body">
+    <h3 class="text-center">Alle studenten!</h3>
+    <?= $data["title"] ?>
+    <br>
+    <?= $data["scanner"] ?>
+  </div>
+</div>
+<br>
+<!-- Submit form with data -->
+<div class="card">
+  <div class="card-body">
+    <form action="" method="POST">
+        <br><h3 class="text-center">Update een student uit het systeem</h3><br>
+        <input class="form-control mb-3" type="text" name="studentid" placeholder="ID Student">
+        <input class="form-control mb-3" type="text" name="firstname" placeholder="Voornaam">
+        <input class="form-control mb-3" type="text" name="lastname" placeholder="Achternaam">
+        <input class="form-control mb-3" type="text" name="mail" placeholder="Mail">
+        <input class="form-control mb-3" type="text" name="phonenumber" placeholder="Telefoon nummer">
+        <input class="form-control mb-3" type="text" name="class" placeholder="Klas">
+        <button class="btn btn-primary" type="submit" name="submitupdate">Bijwerken</button>
+    </form>
+  </div>
+</div>
+<br>
 
-<?php
-    // var_dump($data);
-?>
+<!-- create submit form with data for creating a new student -->
+<div class="card">
+  <div class="card-body">
+    <form action="" method="POST">
+        <br><h3 class="text-center">Nieuwe student toevoegen</h3><br>
+        <input class="form-control mb-3" type="text" name="studentid" placeholder="ID Student">
+        <input class="form-control mb-3" type="text" name="firstname" placeholder="Voornaam">
+        <input class="form-control mb-3" type="text" name="lastname" placeholder="Achternaam">
+        <input class="form-control mb-3" type="text" name="mail" placeholder="Mail">
+        <input class="form-control mb-3" type="text" name="phonenumber" placeholder="Telefoon nummer">
+        <input class="form-control mb-3" type="text" name="class" placeholder="Klas">
+        <button class="btn btn-primary" type="submit" name="submitcreate">Toevoegen</button>
+    </form>
+  </div>
+</div>
+
+
+<!-- Delete student -->
+<div class="card">
+  <div class="card-body">
+    <form action="" method="POST">
+        <br><h3 class="text-center">Verwijder een student uit het systeem</h3><br>
+        <input class="form-control mb-3" type="text" name="studentid" placeholder="ID Student">
+        <button class="btn btn-primary mb-3" type="submit" name="submitdelete">Verwijderen</button>
+    </form>
+  </div>
+</div>
