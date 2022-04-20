@@ -36,7 +36,7 @@ class Items extends Controller {
            if(isset($_POST["delete"])){
 
             //Call function in Model class and give no arguments
-            $this->item->delete();
+            $this->itemModel->delete();
           
           }
           
