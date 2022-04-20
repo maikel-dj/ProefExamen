@@ -16,14 +16,42 @@
           }
         
         //Delete student function
-        public function deleteStudent($studentfirstname, $studentlastname) {
-             
-            //sql delete query
-            $this->db->query("DELETE FROM students WHERE firstname='$studentfirstname' AND lastname='$studentlastname'");
+        public function deleteStudent() {
 
-            //$result = $this->db->resultSet();
+            //Clean variables from form
+            $studentid = $_POST["studentid"];
 
-            //return $result;
+            //sql delete query execute
+            
+            $query = $this->db->query("DELETE FROM students WHERE studentid='$studentid'");
+
+            //return table
+            header("location: ../student/index");
+            $result = $this->db->resultSet();
+            
+            return $result;
+            
         } 
+
+        public function updateStudent() {
+
+            //Clean variables from form
+            $studentid = $_POST["studentid"];
+            $firstname = $_POST["firstname"];
+            $lastname = $_POST["lastname"];
+            $mail = $_POST["mail"];
+            $phonenumber = $_POST["phonenumber"];
+            $class = $_POST["class"];
+
+            //sql update query execute
+            $query = $this->db->query("UPDATE `students` SET `studentid` = '$studentid', `firstname` = '$firstname', `lastname` = '$lastname', `email` = '$mail', `phonenumber` = '$phonenumber', `class` = '$class' WHERE `students`.`studentid` = $studentid;");
+
+            //return table
+            header("location: ../student/index");
+            $result = $this->db->resultSet();
+
+            return $result;
+
+        }
 
         }
