@@ -35,8 +35,8 @@
           <div id="snelmenubg"><a href="../student/index" id="snelmenu" style="text-decoration: none;"><i class="fas fa-globe"></i> Beheer studenten</a></div>
           <div id="snelmenubg"><a href="../" id="snelmenu" style="text-decoration: none;"><i class="fas fa-text-width"></i> Beheer baliemedewerkers</a></div>
           <div id="snelmenubg"><a href="../" id="snelmenu" style="text-decoration: none;"><i class="fas fa-ticket-alt"></i> Beheer docenten</a></div>
-          <div id="snelmenubg"><a href="../" id="snelmenu" style="text-decoration: none;"><i class="fas fa-file-invoice"></i> Maak item</a></div>
-          <div id="snelmenubg"><a href="../" id="snelmenu" style="text-decoration: none;"><i class="fas fa-file-invoice"></i> Reserveer item</a></div>
+          <div id="snelmenubg"><a href="../createitem/index" id="snelmenu" style="text-decoration: none;"><i class="fas fa-file-invoice"></i> Maak item</a></div>
+          <div id="snelmenubg"><a href="../reserveren/index" id="snelmenu" style="text-decoration: none;"><i class="fas fa-file-invoice"></i> Reserveer item</a></div>
         </div>
       </div>
     </div>
