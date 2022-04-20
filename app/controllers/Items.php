@@ -13,14 +13,16 @@ class Items extends Controller {
 
         foreach($itemsData as $value)
         {
-            $rows .= $value->itemid 
-            .= $value->itemname 
-            .=$value->category 
-            .=$value->description 
-            .=$value->brand 
-            .=$value->typenumber 
-            .=$value->purchasedate 
-            .=$value->price;
+            $rows .= '<tr>
+            <th scope="row">' . $value->itemid . '</th>
+            <td>' . $value->itemname . '</td>
+            <td> '. $value->category .'</td>
+            <td>'.$value->category.'</td>
+            <td>'.$value->brand.'</td>
+            <td>'.$value->typenumber.'</td>
+            <td>'.$value->purchasedate.'</td>
+            <td>'. $value->price.'</td>
+        </tr>';
         }
 
 
