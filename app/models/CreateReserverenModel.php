@@ -35,6 +35,37 @@
             // Check result of the row count
             return $result;
         }
+
+        public function deleteReservering()
+        {
+            $reserverenid = $_POST["reserverenid"];
+            $sql = "DELETE FROM reservering WHERE id='$reserverenid'";
+            // Prepare SQl statement
+            $this->db->query($sql);
+            // Execute SQL statement
+            $this->db->execute();
+            // see how many rows are made in the database
+            $result = $this->db->rowCount();
+            // Check result of the row count
+            return $result;
+        }
+        
+        public function updateReservering()
+        {
+            $fullname = $_POST["fullname"];
+            $itemid = $_POST["itemid"];
+            $reserverenid = $_POST["reserverenid"];
+            $sql = "UPDATE reservering SET `fullname` = '$fullname', `itemid` = '$itemid' WHERE `reservering`.`id` = $reserverenid;";
+
+            // Prepare SQl statement
+            $this->db->query($sql);
+            // Execute SQL statement
+            $this->db->execute();
+            // see how many rows are made in the database
+            $result = $this->db->rowCount();
+            // Check result of the row count
+            return $result;
+        }
         
         // Create item options
         public function getItemOptions()

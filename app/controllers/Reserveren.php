@@ -20,6 +20,18 @@ class Reserveren extends Controller {
             var_dump($x);
             echo '<meta http-equiv="refresh" content="0; URL=../reserveren/index">';
           }
+
+          if(isset($_POST["submitdelete"])){
+            $x = $this->CreateReserverenModel->deleteReservering();
+            var_dump($x);
+            echo '<meta http-equiv="refresh" content="0; URL=../reserveren/index">';
+          }
+          
+          if(isset($_POST["submitupdate"])){
+            $x = $this->CreateReserverenModel->updateReservering();
+            var_dump($x);
+            echo '<meta http-equiv="refresh" content="0; URL=../reserveren/index">';
+          }
         
           $itemOptions = $this->CreateReserverenModel->getItemOptions();
 
