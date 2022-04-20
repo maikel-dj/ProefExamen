@@ -25,7 +25,7 @@ class student extends Controller {
 
             //Call function in Model class and give no arguments
             $this->CreateStudentModel->deleteStudent();
-          
+
           }
 
         //Form submit button to update student information
@@ -33,10 +33,17 @@ class student extends Controller {
 
             //Call function in Model class and give no arguments
             $this->CreateStudentModel->updateStudent();
-                  
-          }  
 
-        } 
-        
+          }
+
+        //The submitted form part for creating a new student
+        if(isset($_POST["submitcreate"])){
+
+            //Call function in Model class and give no arguments
+            $this->CreateStudentModel->createStudent();
+
+          }
+
+        }
+
     }
-
