@@ -47,7 +47,7 @@
 .menuitem{
   font-size: 1.2vw;
   text-decoration: none;
-  color: #588CAA;
+  color: #0A58CA;
   transition: 0.3s;
   margin-top: 1rem;
   margin-bottom: 1rem;
