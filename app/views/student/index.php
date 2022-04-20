@@ -2,13 +2,8 @@
 <h1>Studenten beheer pagina</h1><br>
 
 <!-- Show list of users -->
-<h3>Alle studenten!</h3><br>
-<?= $data["firstname"]; ?>
+<h3>Alle studenten!</h3>
 
-<!-- Submit form with data -->
-<form action="post">
-    <label for="studentFirstName">Update de gegevens van een student!</label><br><br>
-</form>
 
 <<<<<<< Updated upstream
 =======
@@ -17,8 +12,13 @@
 
 >>>>>>> Stashed changes
 <?php
+    // Display
 
-    // Clean variables
+    echo $data['scanner'];
 
-    var_dump($data);
 ?>
+
+<!-- Submit form with data -->
+<form action="post">
+    <br><h3>Update de gegevens van een student!</h3><br><br>
+</form>
