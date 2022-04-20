@@ -1,6 +1,23 @@
 <?php
+class item{
 
- Function GetItems() {
+   private $db;
+
+   public function __construct()
+   {
+      $this->db = new Database;
+   }
+
+   public function readItems()
+   {
+      $this->db->query("SELECT * FROM items");
+      $result = $this->db->resultSet();
+
+      return $result;
+   }
+}
+
+Function GetItems() {
     $servername = "localhost";
     $username = "root";
     $password = "";
