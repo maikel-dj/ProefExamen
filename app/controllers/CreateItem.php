@@ -1,24 +1,33 @@
 <?php
 class CreateItem extends Controller {
     public function __construct() {
-        $this->CreateStudentModel = $this->model('CreateItemModel');
+        $this->CreateItemModel = $this->model('CreateItemModel');
     }
 
 
     public function index() {
         $rows = "";
-        $scanner = $this->CreateStudentModel->getStudents();
+        $scanner = $this->CreateItemModel->getItems();
 
         foreach ($scanner as $value) {
-            $rows .= $value->studentid . " " . $value->firstname . $value->lastname . " " . $value->email . " " . $value->phonenumber;
+            $rows .= $value->id . " " . $value->itemname . $value->category . " " . $value->description . " " . $value->brand . " " . $value->typenumber . " " . $value->purchasedate . " " . $value->price;
             $rows .= "<br>";
         }
 
-        $data = [
-            'title' => 'Scan site',
-            'scanner' => $rows
-        ];
+        if(isset($_POST["submit"])){
+            // Call function insertItem in model CreateItemModel.php
+            $x = $this->CreateItemModel->insertItem();
+            var_dump($x);
+            header("location: ../createitem/index");
+          }
+        
+          $catOptions = $this->CreateItemModel->getCategoryOptions();
 
-        $this->view('createitem/index', $data);
+        $this->view('createitem/index', $data = [
+            'title' => 'Scan site',
+            'scanner' => $rows,
+            'categories' => $catOptions
+        ]);
     }
+    
 }
