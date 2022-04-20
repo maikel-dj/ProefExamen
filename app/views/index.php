@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style media="screen">
 
 #snelmenu:hover {
@@ -34,7 +33,7 @@
           <h5 class="text-center">Snelmenu</h5>
           <div id="snelmenubg"><a href="../student/index" id="snelmenu" style="text-decoration: none;"><i class="fas fa-globe"></i> Beheer studenten</a></div>
           <div id="snelmenubg"><a href="../" id="snelmenu" style="text-decoration: none;"><i class="fas fa-text-width"></i> Beheer baliemedewerkers</a></div>
-          <div id="snelmenubg"><a href="../" id="snelmenu" style="text-decoration: none;"><i class="fas fa-ticket-alt"></i> Beheer docenten</a></div>
+          <div id="snelmenubg"><a href="../teacher/index" id="snelmenu" style="text-decoration: none;"><i class="fas fa-ticket-alt"></i> Beheer docenten</a></div>
           <div id="snelmenubg"><a href="../createitem/index" id="snelmenu" style="text-decoration: none;"><i class="fas fa-file-invoice"></i> Maak item</a></div>
           <div id="snelmenubg"><a href="../reserveren/index" id="snelmenu" style="text-decoration: none;"><i class="fas fa-file-invoice"></i> Reserveer item</a></div>
         </div>
