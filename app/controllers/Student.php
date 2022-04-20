@@ -4,18 +4,17 @@ class student extends Controller {
         $this->CreateStudentModel = $this->model('CreateStudentModel');
     }
 
-
     public function index() {
         $rows = "";
         $scanner = $this->CreateStudentModel->getStudents();
 
         foreach ($scanner as $value) {
-            $rows .= $value->studentid . " " . $value->firstname . $value->lastname . " " . $value->email . " " . $value->phonenumber . " " . $value->class;
+            $rows .=  " " . $value->studentid . " " . $value->firstname . " " . $value->lastname . " " . $value->email . " " . $value->phonenumber . " " . $value->class;
             $rows .= "<br>";
         }
 
         $data = [
-            'title' => 'Scan site',
+            'title' => 'ID | Voornaam | Achternaam | Email | Telefoonnummer | Klas',
             'scanner' => $rows
         ];
 
