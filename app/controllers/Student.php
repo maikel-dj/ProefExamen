@@ -10,7 +10,7 @@ class student extends Controller {
         $scanner = $this->CreateStudentModel->getStudents();
 
         foreach ($scanner as $value) {
-            $rows .= $value->studentid . " " . $value->firstname . $value->lastname . " " . $value->email . " " . $value->phonenumber;
+            $rows .= $value->studentid . " " . $value->firstname . $value->lastname . " " . $value->email . " " . $value->phonenumber . " " . $value->class;
             $rows .= "<br>";
         }
 

@@ -10,6 +10,12 @@
     <label for="studentFirstName">Update de gegevens van een student!</label><br><br>
 </form>
 
+<<<<<<< Updated upstream
+=======
+<h2>id  Voornaam    Achternaam   email   telefoonnummer klas</h2>
+<?= $data["scanner"] ?>
+
+>>>>>>> Stashed changes
 <?php
 
     // Clean variables
