@@ -3,20 +3,8 @@
 
 <!-- Show list of users -->
 <h3>Alle studenten!</h3>
-
-
-<<<<<<< Updated upstream
-=======
-<h2>id  Voornaam    Achternaam   email   telefoonnummer klas</h2>
 <?= $data["scanner"] ?>
 
->>>>>>> Stashed changes
-<?php
-    // Display
-
-    echo $data['scanner'];
-
-?>
 
 <!-- Submit form with data -->
 <form action="post">
