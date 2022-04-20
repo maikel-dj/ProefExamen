@@ -19,5 +19,20 @@ class student extends Controller {
         ];
 
         $this->view('student/index', $data);
+
+        //Form submit button to delete student
+        if(isset($_POST["submitdelete"])){
+
+            //Clean variables from form
+            $studentfirstname = $_POST["studentfirstname"];
+            $studentlastname =  $_POST["studentlastname"];
+
+            //Call function in Model class and give first/last names argument
+            $this->CreateStudentModel->deleteStudent($studentfirstname, $studentlastname);
+          
+          }
+
+        } 
+        
     }
-}
+

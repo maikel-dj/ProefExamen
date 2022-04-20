@@ -15,15 +15,15 @@
             return $result;
           }
         
-        public function deleteStudent() {
+        //Delete student function
+        public function deleteStudent($studentfirstname, $studentlastname) {
              
             //sql delete query
             $this->db->query("DELETE FROM students WHERE firstname='$studentfirstname' AND lastname='$studentlastname'");
 
-            $result = $this->db->resultSet();
+            //$result = $this->db->resultSet();
 
-            return $result;
-
+            //return $result;
         } 
 
         }
