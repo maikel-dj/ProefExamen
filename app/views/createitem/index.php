@@ -1,6 +1,10 @@
 <title><?= $data["title"]?></title>
 <h1>Item aanmaken</h1>
 
+<?php if(isset($_GET["message"])){
+  echo '<div class="alert alert-success">' . $_GET["message"] . '</div>';
+} ?>
+
 <form action="" method="POST">
     <label>
         Naam item:

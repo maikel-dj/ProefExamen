@@ -18,7 +18,7 @@ class CreateItem extends Controller {
             // Call function insertItem in model CreateItemModel.php
             $x = $this->CreateItemModel->insertItem();
             var_dump($x);
-            header("location: ../createitem/index");
+            echo '<meta http-equiv="refresh" content="0; URL=../reserveren/index?message=Aanmaken%20gelukt">';
           }
         
           $catOptions = $this->CreateItemModel->getCategoryOptions();
