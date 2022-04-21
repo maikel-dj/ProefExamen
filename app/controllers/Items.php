@@ -21,9 +21,11 @@ class Items extends Controller {
             <td>'.$value->brand.'</td>
             <td>'.$value->typenumber.'</td>
             <td>'.$value->purchasedate.'</td>
-            <td>'. $value->price.'</td>
-        </tr>';
+            <td>'. $value->price.'</td>';
+            $rows .= '<td><a href="/items/update/$value->id">update</a> </td>';
+            $rows .= '</tr>';
         }
+
 
 
         $data = [
@@ -39,11 +41,17 @@ class Items extends Controller {
             $this->itemModel->delete();
           
           }
+
+
+        //Form submit button to update item entries in the database
+        if(isset($_POST["update"])){
+
+            //Call function in Model class without any arguments passed or needed
+            $this->itemModel->updateItem();
+            
+            }
           
     }
-    
-
-
 
 }
 

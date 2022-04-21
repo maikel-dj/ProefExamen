@@ -9,8 +9,6 @@
       <th scope="col">Type Number</th>
       <th scope="col">Purchase Date</th>
       <th scope="col">Price</th>
-      <th>Update</th>
-      <th>Delete</th>
     </tr>
   </thead>
 
@@ -18,6 +16,18 @@
     <br><h3>Verwijder een item door de ID in te voeren in het veld hieronder</h3><br> 
     <input class="form-control" type="text" name="itemid" placeholder="voer item id in">
     <button class="btn btn-primary" type="submit" name="delete">Confirm</button>
+</form>
+
+<form action="" method="POST">
+    <br><h3>Update uw item:</h3><br> 
+    <input class="form-control" type="text" name="itemid" placeholder="voer item id in">
+    <input class="form-control" type="text" name="itemname" placeholder="voer item naam in">
+    <input class="form-control" type="text" name="category" placeholder="voer item categorie in">
+    <input class="form-control" type="text" name="description" placeholder="voer item beschrijving in">
+    <input class="form-control" type="text" name="brand" placeholder="voer item merk in">
+    <input class="form-control" type="text" name="typenumber" placeholder="voer type nummer in">
+    <input class="form-control" type="text" name="price" placeholder="voer item prijs in">
+    <button class="btn btn-primary" type="submit" name="update">Confirm</button>
 </form>
 
   <tbody>   
