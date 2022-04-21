@@ -4,29 +4,46 @@ class student extends Controller {
         $this->CreateStudentModel = $this->model('CreateStudentModel');
     }
 
-
     public function index() {
         $rows = "";
         $scanner = $this->CreateStudentModel->getStudents();
-        $scanName = "";
-
-        // function GetScannerModel($scanName){
-        //     foreach ($scanner as $value) {
-        //         $rows .= $value->id . " " . $value->name . " " . $value->capitalCity . " " . $value->population;
-        //         $rows .= "<br>";
-        //     }
-        // }
 
         foreach ($scanner as $value) {
-            $rows .= $value->studentid . " " . $value->firstname . $value->lastname . " " . $value->email . " " . $value->phonenumber;
+            $rows .=  " " . $value->studentid . " " . $value->firstname . " " . $value->lastname . " " . $value->email . " " . $value->phonenumber . " " . $value->class;
             $rows .= "<br>";
         }
 
         $data = [
-            'title' => 'Scan site',
+            'title' => 'ID | Voornaam | Achternaam | Email | Telefoonnummer | Klas',
             'scanner' => $rows
         ];
 
         $this->view('student/index', $data);
+
+        //Form submit button to delete student entry
+        if(isset($_POST["submitdelete"])){
+
+            //Call function in Model class and give no arguments
+            $this->CreateStudentModel->deleteStudent();
+
+          }
+
+        //Form submit button to update student information
+        if(isset($_POST["submitupdate"])){
+
+            //Call function in Model class and give no arguments
+            $this->CreateStudentModel->updateStudent();
+
+          }
+
+        //The submitted form part for creating a new student
+        if(isset($_POST["submitcreate"])){
+
+            //Call function in Model class and give no arguments
+            $this->CreateStudentModel->createStudent();
+
+          }
+
+        }
+
     }
-}
