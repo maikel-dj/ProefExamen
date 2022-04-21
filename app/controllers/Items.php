@@ -10,7 +10,7 @@ class Items extends Controller {
     {
         $itemsData = $this->itemModel->readItems();
         $rows = "";
-
+        // For each loop to get data
         foreach($itemsData as $value)
         {
             $rows .= '<tr>

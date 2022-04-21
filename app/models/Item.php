@@ -8,7 +8,7 @@ class Item{
    {
       $this->db = new Database;
    }
-
+   // Read Table Items
    public function readItems()
    {
       $this->db->query("SELECT * FROM items");

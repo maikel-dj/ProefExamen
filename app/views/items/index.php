@@ -11,13 +11,13 @@
       <th scope="col">Price</th>
     </tr>
   </thead>
-
+  	<!-- form om de id te deleten -->
   <form action="" method="POST">
     <br><h3>Verwijder een item door de ID in te voeren in het veld hieronder</h3><br> 
     <input class="form-control" type="text" name="itemid" placeholder="voer item id in">
     <button class="btn btn-primary" type="submit" name="delete">Confirm</button>
 </form>
-
+<!-- form om te updaten -->
 <form action="" method="POST">
     <br><h3>Update uw item:</h3><br> 
     <input class="form-control" type="text" name="itemid" placeholder="voer item id in">
