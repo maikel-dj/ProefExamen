@@ -167,7 +167,8 @@ document.querySelectorAll('.sidebar .nav-link').forEach(function(element){
     		<ul class="submenu collapse">
     			<li><a class="nav-link nav-edit-item" href="../student">Studenten</a></li>
     			<li><a class="nav-link nav-edit-item" href="../teacher">Docenten</a></li>
-    			<li><a class="nav-link nav-edit-item" href="../">Baliemedewerkers</a></li>
+    			<li><a class="nav-link nav-edit-item" href="../baliemedewerker">Baliemedewerkers</a></li>
+          <li><a class="nav-link nav-edit-item" href="../items">Items</a></li>
     		</ul>
     	</li>
         </div>
