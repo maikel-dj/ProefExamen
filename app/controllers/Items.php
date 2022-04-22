@@ -14,7 +14,7 @@ class Items extends Controller {
         foreach($itemsData as $value)
         {
             $rows .= '<tr>
-            <th scope="row">' . $value->itemid . '</th>
+            <th scope="row">' . $value->id . '</th>
             <td>' . $value->itemname . '</td>
             <td> '. $value->category .'</td>
             <td>'.$value->category.'</td>
@@ -39,7 +39,7 @@ class Items extends Controller {
 
             //Call function in Model class and give no arguments
             $this->itemModel->delete();
-          
+
           }
 
 
@@ -48,10 +48,9 @@ class Items extends Controller {
 
             //Call function in Model class without any arguments passed or needed
             $this->itemModel->updateItem();
-            
+
             }
-          
+
     }
 
 }
-
